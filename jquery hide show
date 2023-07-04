@@ -1,0 +1,13 @@
+jQuery(document).ready(function() {
+    jQuery('.footer-sticky').hide();
+    jQuery(window).scroll(function() {
+      if (jQuery(window).scrollTop() >= 20) {
+        jQuery('.footer-sticky').show();
+      }
+    });
+    jQuery(window).scroll(function() {
+        if (jQuery(window).scrollTop() <= 20) {
+          jQuery('.footer-sticky').hide();
+        }
+      });
+  });
